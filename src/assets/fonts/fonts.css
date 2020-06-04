@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../../static/fonts/BebasNeue-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Gothic";
+  src: url("../../static/fonts/GOTHICB.TTF") format("ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../static/fonts/Roboto-Thin.ttf") format("ttf");
+}
