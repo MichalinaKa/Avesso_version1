@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components"
-import styled from "styled-components"
+
 import { colors } from "../styles/colors"
 
 const GlobalStyle = createGlobalStyle`
@@ -17,6 +17,7 @@ html{
 body{
     margin: 0;
      padding: 0;
+     font-family: "Lato"
 }
 
 button {
@@ -25,6 +26,7 @@ button {
 }
 
 p{
+
     font-size: 15px;
     line-height:150%
 }
@@ -34,5 +36,8 @@ a {
     color: inherit;
 }
 
+
+ 
 `
+
 export default GlobalStyle

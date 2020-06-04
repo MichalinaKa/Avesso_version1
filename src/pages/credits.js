@@ -5,22 +5,22 @@ import styled from "styled-components"
 import { MainWrapper } from "../components/pageElements/mainWrapper"
 import GlobalStyle from "../styles/globalStyle"
 import { ListWrapper } from "../components/topNavElements/listWrapper"
-import { goHome } from "../components/topNavElements/goHome"
 import { Link } from "gatsby"
 import { NavMainWrapper } from "../components/topNavElements/navMainWrapper"
 import { TextWrapper } from "../components/pageElements/textWrapper"
-import { TextNoBorder } from "../components/pageElements/textNoBorder"
 import { colors } from "../styles/colors"
 import { media } from "../styles/media"
 const H1 = styled.h1`
+  font-family: "Bebas Neue";
+  font-size: 50px;
   position: relative;
   :before {
     content: "";
     background-color: ${colors.yellow};
-    width: 600px;
+    width: 480px;
     height: 3px;
     position: absolute;
-    top: 16px;
+    top: 26px;
     ${media.tablet} {
       width: 0;
     }
@@ -28,6 +28,13 @@ const H1 = styled.h1`
       width: 0;
     }
   }
+`
+
+const Bold = styled.p`
+  font-family: "Bebas Neue";
+  /* margin: 0; */
+  letter-spacing: 2px;
+  font-weight: 900;
 `
 const CreditsPage = () => (
   <Layout>
@@ -53,27 +60,28 @@ const CreditsPage = () => (
           Najla Leroy • Paulo Maias • Pedro Alegria • Raquel Felgueiras • Samuel
           Silva • Susana de Medeiros • Susana Soares Pinto • Xian Xinyings{" "}
           <br></br>
-          <strong>Artistas</strong>
+          <Bold>Artistas</Bold>
         </p>
 
         <p>
-          DAP • Gabriela Carvalho • Raquel Felgueiras<br></br>
-          <strong>Organização</strong>
+          Doutoramento em Artes Plásticas - FBAUP • Gabriela Carvalho • Raquel
+          Felgueiras<br></br>
+          <Bold>Organização</Bold>
         </p>
 
         <p>
           Gabriela Carvalho<br></br>
-          <strong>Curadoria</strong>
+          <Bold>Curadoria</Bold>
         </p>
 
         <p>
           Eduardo Rocha<br></br>
-          <strong>Identidade Visual</strong>
+          <Bold>Identidade Visual</Bold>
         </p>
 
         <p>
-          Michalina Kamińska<br></br>
-          <strong>Programação</strong>
+          Michalina Kaminska<br></br>
+          <Bold>Web designer</Bold>
         </p>
       </TextWrapper>
     </MainWrapper>

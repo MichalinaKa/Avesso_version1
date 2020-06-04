@@ -2,7 +2,6 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
 import { graphql } from "gatsby"
-import styled from "styled-components"
 import { H1 } from "../components/pageElements/H1"
 import { MainWrapper } from "../components/pageElements/mainWrapper"
 import { GalleryWrapper } from "../components/pageElements/galleryWrapper"
@@ -24,7 +23,7 @@ const MartaPage = ({ data }) => (
       <GalleryWrapper>
         <ImageWrapper>
           <StyledImage src="/artists/martaimg1.jpg" />
-          <ImageTitle>
+          <ImageTitle data-toggle-fullscreen>
             {data.allDataJson.edges[17].node.img1Description}
           </ImageTitle>
         </ImageWrapper>{" "}
@@ -87,6 +86,7 @@ const MartaPage = ({ data }) => (
     </MainWrapper>
   </Layout>
 )
+
 export const query = graphql`
   {
     allDataJson {
@@ -105,17 +105,7 @@ export const query = graphql`
         }
       }
     }
-    allFile(filter: { relativePath: { regex: "/marta/" } }) {
-      nodes {
-        childImageSharp {
-          fluid(quality: 90) {
-            src
-            srcSet
-            sizes
-          }
-        }
-      }
-    }
   }
 `
+
 export default MartaPage

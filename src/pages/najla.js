@@ -2,7 +2,7 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
 import { graphql } from "gatsby"
-import styled from "styled-components"
+
 import { H1 } from "../components/pageElements/H1"
 import { MainWrapper } from "../components/pageElements/mainWrapper"
 import { GalleryWrapper } from "../components/pageElements/galleryWrapper"
@@ -51,7 +51,9 @@ const NajlaPage = ({ data }) => (
       <TextWrapper>
         {" "}
         <TitleOfWork>{data.allDataJson.edges[19].node.title}</TitleOfWork>
-        <Website>{data.allDataJson.edges[19].node.website}</Website>
+        <Website as="a" href="https://www.behance.net/najlaleroy">
+          {data.allDataJson.edges[19].node.website}
+        </Website>
         <TextWithBorder>
           <p>
             Processo reverso<br></br>

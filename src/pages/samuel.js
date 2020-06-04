@@ -2,7 +2,7 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
 import { graphql } from "gatsby"
-import styled from "styled-components"
+
 import { H1 } from "../components/pageElements/H1"
 import { MainWrapper } from "../components/pageElements/mainWrapper"
 import { GalleryWrapper } from "../components/pageElements/galleryWrapper"
@@ -81,7 +81,9 @@ const SamuelPage = ({ data }) => (
       <TextWrapper>
         {" "}
         <TitleOfWork>{data.allDataJson.edges[23].node.title}</TitleOfWork>
-        <Website>{data.allDataJson.edges[23].node.website}</Website>
+        <Website as="a" href="http://www.samuel-silva.com/">
+          {data.allDataJson.edges[23].node.website}
+        </Website>
         <TextWithBorder>
           <p>
             No ano 2000 Jonas Mekas, um dos mais célebres cineastas do cinema

@@ -11,6 +11,11 @@ const LayoutWrapper = styled.div`
   flex-wrap: wrap;
   padding: 0 auto;
   position: relative;
+  ${media.phone} {
+    margin: 0 auto;
+    display: block;
+    padding: 0;
+  }
 `
 
 export default function Layout({ children }) {
@@ -19,6 +24,7 @@ export default function Layout({ children }) {
       <GlobalStyle />
       <LayoutWrapper>
         {children}
+
         <BottomNavArtistPage />
       </LayoutWrapper>
     </>

@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const goHome = styled.li`
   padding-top: 10px;
+
   width: 100%;
   text-align: center;
   text-decoration: none;

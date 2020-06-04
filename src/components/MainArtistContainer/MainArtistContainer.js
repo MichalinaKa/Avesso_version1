@@ -27,6 +27,7 @@ const ArtistWrapper = styled.div`
 `
 const H1 = styled.h1`
   font-size: 20px;
+  font-family: "Bebas Neue";
   font-weight: normal;
 `
 

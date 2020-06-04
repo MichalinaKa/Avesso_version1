@@ -63,7 +63,9 @@ const LudgeroPage = ({ data }) => (
       <TextWrapper>
         {" "}
         <TitleOfWork>{data.allDataJson.edges[15].node.title}</TitleOfWork>
-        <Website>{data.allDataJson.edges[15].node.website}</Website>
+        <Website as="a" href="https://dludgero.wixsite.com/ludgeroalmeida">
+          {data.allDataJson.edges[15].node.website}
+        </Website>
         <TextWithBorder>
           <p>
             Neste projeto, a prática artística atua criticamente na análise de

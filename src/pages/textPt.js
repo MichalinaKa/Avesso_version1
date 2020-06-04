@@ -1,8 +1,7 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
 import GlobalStyle from "../styles/globalStyle"
-import TopNavArtistPage from "../components/TopNavArtistPage/TopNavArtistPage"
-import BottomNavArtistPage from "../components/BottomNavArtistPage/BottomNavArtistPage"
+
 import Layout from "../components/Layout/Layout"
 import { MainWrapper } from "../components/pageElements/mainWrapper"
 import { TextWrapper } from "../components/pageElements/textWrapper"
@@ -18,15 +17,20 @@ import { media } from "../styles/media"
 
 const PBorder = styled.p`
   text-align: left;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 250%;
+  ${media.tablet} {
+    line-height: 200%;
+    font-size: 16px;
+  }
   ${media.phone} {
     line-height: 200%;
+    font-size: 15px;
   }
 `
 
 const PNoBorder = styled.p`
-  font-size: 12px;
+  font-size: 16px;
   text-align: left;
   width: 100%;
   line-height: 250%;
@@ -35,6 +39,9 @@ const PNoBorder = styled.p`
   }
 `
 const H1 = styled.h1`
+  font-family: "Bebas Neue";
+  font-size: 50px;
+
   position: relative;
   :before {
     content: "";
@@ -42,7 +49,7 @@ const H1 = styled.h1`
     width: 120px;
     height: 3px;
     position: absolute;
-    top: 16px;
+    top: 26px;
   }
 `
 
@@ -107,54 +114,66 @@ const TextPage = () => (
         </TextWithBorder>
         <TextNoBorder alignLeft>
           <PNoBorder>
-            1.Le saut dans le vide, foto-performance de Yves Klein, 1960:
-            http://www.yvesklein.com/en/oeuvres/<wbr></wbr>
-            view/6/immateriel/643/le-saut-dans-le-vide/?of=0 <br></br>2. “DA
-            ADVERSIDADE VIVEMOS!” (Oiticica, 1967)<br></br> 3 Poesia é risco,
-            performance de Augusto de Campos, Cid Campos e Walter Silveira,
-            1996: http://site.videobrasil.org.br/en/canalvb/video/1713108/
+            1. Le saut dans le vide, foto-performance de Yves Klein, 1960:
+            <a
+              href="http://www.yvesklein.com/en/oeuvres/
+            view/6/immateriel/643/le-saut-dans-le-vide/?of=0"
+            >
+              http://www.yvesklein.com/en/oeuvres/<wbr></wbr>
+              view/6/immateriel/643/le-saut-dans-le-vide/?of=0
+            </a>
+            <br></br>2. “DA ADVERSIDADE VIVEMOS!” (Oiticica, 1967)<br></br> 3
+            Poesia é risco, performance de Augusto de Campos, Cid Campos e
+            Walter Silveira, 1996:
+            <a href="http://site.videobrasil.org.br/en/canalvb/video/1713108/">
+              http://site.videobrasil.<wbr></wbr>
+              org.br/en/canalvb/video/1713108/
+            </a>
             <wbr></wbr>
-            Poesia_e_risco_Augusto_de_Campo_Cid_Campos_e_Walter_Silveira_11o_Festival{" "}
-            <br></br>4. Lugar é espaço permeado por memória, por travessias,
-            vozes daqueles que abriram as trilhas, “uma porção de
-            terra/cidade/paisagem vista de dentro”. Adentrar terreno estrangeiro
-            pede temporalidade, os sentidos atentos a criar conexões com o que é
-            ainda estranho. A escuta se radicaliza na tentativa de absorver os
-            sons reconhecíveis no lugar-corpo que trazemos dentro. Na
-            ressonância interior dessas vozes, germina-se a possibilidade da
-            fala. Alocadas em ninho-garganta11, as palavras crescem, tomam forma
-            e ganham alma na sonoridade vibratória que se projeta da boca pelo
-            ar. Ser estrangeiro em lugar algo-rítmico é estranhar o habitat,
-            lançar um olhar desconfiado pelo que é desconhecido, não-familiar.
-            Ser ex-ótico, olhar pela via do estranhamento, do incômodo que
-            reverbera no corpo-pele e germina, cria seres, palavras, larvas que
-            agora deslizam nesse campo numérico inóspito.<br></br> 5. Vertere,
-            origem do verso, do avesso, do adverso. Em tradução do latim seria
-            algo como virar ou dobrar. Remete a língua praticada entre os
-            agricultores em uma comparação com o ato de arar a terra em faixas
-            que ao fim do terreno, viravam e recomeçavam em uma nova linha.
-            Diz-se que na época clássica, os gregos escreviam até o fim da linha
-            e então passavam para baixo, chamando-a de um vertere, verso.
-            Podemos pensar que o avesso do avesso do avesso do avesso seja um
-            poema, um campo arado, uma fita de Moebius, “uma superfície
-            topológica na qual o extremo de um dos lados continua no avesso do
-            outro, o que os torna indiscerníveis”. (Rolnik, 2018)<br></br> 6.
-            “Períodos de convulsão são sempre os mais difíceis de viver, mas é
-            neles também que a vida grita mais alto e desperta aqueles que ainda
-            não sucumbiram à condição de zumbis – uma condição a que estamos
-            todos destinados pela cafetinagem da pulsão vital” (Rolnik, 2018)
+            Poesia_e_risco_Augusto_de<wbr></wbr>_Campo_Cid_Campos_e_Walter
+            <wbr></wbr>_Silveira_11o_Festival <br></br>4. Lugar é espaço
+            permeado por memória, por travessias, vozes daqueles que abriram as
+            trilhas, “uma porção de terra/cidade/paisagem vista de dentro”.
+            Adentrar terreno estrangeiro pede temporalidade, os sentidos atentos
+            a criar conexões com o que é ainda estranho. A escuta se radicaliza
+            na tentativa de absorver os sons reconhecíveis no lugar-corpo que
+            trazemos dentro. Na ressonância interior dessas vozes, germina-se a
+            possibilidade da fala. Alocadas em ninho-garganta11, as palavras
+            crescem, tomam forma e ganham alma na sonoridade vibratória que se
+            projeta da boca pelo ar. Ser estrangeiro em lugar algo-rítmico é
+            estranhar o habitat, lançar um olhar desconfiado pelo que é
+            desconhecido, não-familiar. Ser ex-ótico, olhar pela via do
+            estranhamento, do incômodo que reverbera no corpo-pele e germina,
+            cria seres, palavras, larvas que agora deslizam nesse campo numérico
+            inóspito.<br></br> 5. Vertere, origem do verso, do avesso, do
+            adverso. Em tradução do latim seria algo como virar ou dobrar.
+            Remete a língua praticada entre os agricultores em uma comparação
+            com o ato de arar a terra em faixas que ao fim do terreno, viravam e
+            recomeçavam em uma nova linha. Diz-se que na época clássica, os
+            gregos escreviam até o fim da linha e então passavam para baixo,
+            chamando-a de um vertere, verso. Podemos pensar que o avesso do
+            avesso do avesso do avesso seja um poema, um campo arado, uma fita
+            de Moebius, “uma superfície topológica na qual o extremo de um dos
+            lados continua no avesso do outro, o que os torna indiscerníveis”.
+            (Rolnik, 2018)<br></br> 6. “Períodos de convulsão são sempre os mais
+            difíceis de viver, mas é neles também que a vida grita mais alto e
+            desperta aqueles que ainda não sucumbiram à condição de zumbis – uma
+            condição a que estamos todos destinados pela cafetinagem da pulsão
+            vital” (Rolnik, 2018)
             <br></br> 7. Caminhando, obra de Lygia Clark, 1963:
-            https://www.moma.org/audio/playlist/181/2392 <br></br> 8. “Na parte
-            inferior do degrau, à direita, vi uma pequena esfera furta-cor,
-            dequase intolerável fulgor. A princípio, julguei-a giratória;
-            depois, compreendi que esse movimentera uma ilusão produzida pelos
-            vertiginosos espetáculos que encerrava. O diâmetro do Aleph seria de
-            dois ou três centímetros, mas o espaço cósmico estava aí, sem
-            diminuição de tamanho. Cada coisa (o cristal do espelho, digamos)
-            era infinitas coisas, porque eu a via claramente de todos os pontos
-            do universo. Vi o populoso mar, vi a aurora e a tarde, vi as
-            multidões da América, vi uma prateada teia de aranha no centro de
-            uma negra pirâmide, vi um labirinto roto (era Londres), vi
+            <a href="https://www.moma.org/audio/playlist/181/2392">
+              https://www.moma.org/<wbr></wbr>audio/playlist/181/2392
+            </a>
+            <br></br> 8. “Na parte inferior do degrau, à direita, vi uma pequena
+            esfera furta-cor, dequase intolerável fulgor. A princípio, julguei-a
+            giratória; depois, compreendi que esse movimentera uma ilusão
+            produzida pelos vertiginosos espetáculos que encerrava. O diâmetro
+            do Aleph seria de dois ou três centímetros, mas o espaço cósmico
+            estava aí, sem diminuição de tamanho. Cada coisa (o cristal do
+            espelho, digamos) era infinitas coisas, porque eu a via claramente
+            de todos os pontos do universo. Vi o populoso mar, vi a aurora e a
+            tarde, vi as multidões da América, vi uma prateada teia de aranha no
+            centro de uma negra pirâmide, vi um labirinto roto (era Londres), vi
             intermináveis olhos próximos perscrutando-me como num espelho, vi
             todos os espelhos do planeta e nenhum me refletiu, vi num pátio da
             rua Soler as mesmas lajotas que, há trinta anos, vi no vestíbulo de

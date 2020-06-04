@@ -2,12 +2,10 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
 import { graphql } from "gatsby"
-import styled from "styled-components"
 import { H1 } from "../components/pageElements/H1"
 import { MainWrapper } from "../components/pageElements/mainWrapper"
 import { GalleryWrapper } from "../components/pageElements/galleryWrapper"
 import { ImageWrapper } from "../components/pageElements/imageWrapper"
-import { StyledImage } from "../components/pageElements/styledImage"
 import { ImageTitle } from "../components/pageElements/imageTitle"
 import { TextWrapper } from "../components/pageElements/textWrapper"
 import { TextWithBorder } from "../components/pageElements/textWithBorder"
@@ -37,7 +35,9 @@ const RaquelPage = ({ data }) => (
 
       <TextWrapper>
         <TitleOfWork>{data.allDataJson.edges[22].node.title}</TitleOfWork>
-        <Website>{data.allDataJson.edges[22].node.website}</Website>
+        <Website as="a" href="http://www.raquelfelgueiras.com/">
+          {data.allDataJson.edges[22].node.website}
+        </Website>
         <TextWithBorder>
           <p>
             É um loop, um ciclo, um movimento circular que se encerra ao chegar

@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import { media } from "../../styles/media"
 export const TitleOfWork = styled.h2`
+  font-family: "Bebas Neue";
+  letter-spacing: 1px;
   width: 100%;
   font-size: 30px;
   padding: 0 50px 0 200px;

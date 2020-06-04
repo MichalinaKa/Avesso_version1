@@ -36,7 +36,9 @@ const FernandoPage = ({ data }) => (
 
       <TextWrapper>
         <TitleOfWork>{data.allDataJson.edges[10].node.title}</TitleOfWork>
-        <Website>{data.allDataJson.edges[10].node.website}</Website>
+        <Website as="a" href="http://www.virose.pt/fjp">
+          {data.allDataJson.edges[10].node.website}
+        </Website>
         <TextWithBorder>
           <p>
             No início da última década, um vulcão islandês com um nome

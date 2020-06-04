@@ -1,7 +1,7 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
 import Layout from "../components/Layout/Layout"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import AlanVideo from "../assets/images/artists/alansound1.m4a"
 import TopNavArtistPage from "../components/TopNavArtistPage/TopNavArtistPage"
 import { H1 } from "../components/pageElements/H1"
@@ -12,7 +12,6 @@ import { StyledImage } from "../components/pageElements/styledImage"
 import { ImageTitle } from "../components/pageElements/imageTitle"
 import { TextWrapper } from "../components/pageElements/textWrapper"
 import { TextWithBorder } from "../components/pageElements/textWithBorder"
-import { TextNoBorder } from "../components/pageElements/textNoBorder"
 import { TitleOfWork } from "../components/pageElements/titleOfWork"
 import { Website } from "../components/pageElements/website"
 
@@ -41,7 +40,9 @@ const AlanPage = ({ data }) => (
       </GalleryWrapper>
       <TextWrapper>
         <TitleOfWork>{data.allDataJson.edges[1].node.title}</TitleOfWork>
-        <Website>{data.allDataJson.edges[1].node.website}</Website>
+        <Website as="a" href="https://alantod.com">
+          {data.allDataJson.edges[1].node.website}
+        </Website>
         <TextWithBorder>
           <p>
             Regarding aesthetical and theoretical levels, this research will
@@ -91,17 +92,6 @@ export const query = graphql`
           url
           img1Description
           sound1Description
-        }
-      }
-    }
-    allFile(filter: { relativePath: { regex: "/alan/" } }) {
-      nodes {
-        childImageSharp {
-          fluid(quality: 90) {
-            src
-            srcSet
-            sizes
-          }
         }
       }
     }

@@ -2,7 +2,7 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
 import { graphql } from "gatsby"
-import styled from "styled-components"
+
 import { H1 } from "../components/pageElements/H1"
 import { MainWrapper } from "../components/pageElements/mainWrapper"
 import { GalleryWrapper } from "../components/pageElements/galleryWrapper"

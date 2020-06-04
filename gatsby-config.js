@@ -7,7 +7,6 @@ module.exports = {
 
   plugins: [
     `gatsby-plugin-styled-components`,
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -41,7 +40,15 @@ module.exports = {
         fonts: [
           {
             family: `Montserrat`,
-            variants: [`400`, `600`],
+            variants: [`300`, `400`, `600`],
+          },
+
+          {
+            family: `Bebas Neue`,
+          },
+          {
+            family: `Lato`,
+            variants: [`300`, `400`, `700`, `900`],
           },
         ],
       },

@@ -1,8 +1,7 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
 import GlobalStyle from "../styles/globalStyle"
-import TopNavArtistPage from "../components/TopNavArtistPage/TopNavArtistPage"
-import BottomNavArtistPage from "../components/BottomNavArtistPage/BottomNavArtistPage"
+
 import Layout from "../components/Layout/Layout"
 import { MainWrapper } from "../components/pageElements/mainWrapper"
 import { TextWrapper } from "../components/pageElements/textWrapper"
@@ -18,15 +17,20 @@ import { media } from "../styles/media"
 
 const PBorder = styled.p`
   text-align: left;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 250%;
+  ${media.tablet} {
+    line-height: 200%;
+    font-size: 16px;
+  }
   ${media.phone} {
     line-height: 200%;
+    font-size: 15px;
   }
 `
 
 const PNoBorder = styled.p`
-  font-size: 12px;
+  font-size: 16px;
   text-align: left;
   width: 100%;
   line-height: 250%;
@@ -36,6 +40,8 @@ const PNoBorder = styled.p`
 `
 
 const H1 = styled.h1`
+  font-family: "Bebas Neue";
+  font-size: 50px;
   position: relative;
   :before {
     content: "";
@@ -43,7 +49,10 @@ const H1 = styled.h1`
     width: 150px;
     height: 3px;
     position: absolute;
-    top: 16px;
+    top: 26px;
+    ${media.phone} {
+      font-size: 80%;
+    }
   }
 `
 
@@ -116,108 +125,104 @@ const TextPage = () => (
         </TextWithBorder>
         <TextNoBorder alignLeft>
           <PNoBorder>
-            1. Le saut dans le vide, foto-performance de Yves Klein, 1960:
-            http://www.yvesklein.com/en/oeuvres/view/6/immateriel/643/le-saut-dans-le-vide/?of=0{" "}
-            <br></br>2. “DA ADVERSIDADE VIVEMOS!” (Oiticica, 1967)<br></br> 3
-            Poesia é risco, performance de Augusto de Campos, Cid Campos e
-            Walter Silveira, 1996:
-            http://site.videobrasil.org.br/en/canalvb/video/1713108/Poesia_e_risco_Augusto_de_Campo_Cid_Campos_e_Walter_Silveira_11o_Festival{" "}
-            <br></br>4. Lugar é espaço permeado por memória, por travessias,
-            vozes daqueles que abriram as trilhas, “uma porção de
-            terra/cidade/paisagem vista de dentro”. Adentrar terreno estrangeiro
-            pede temporalidade, os sentidos atentos a criar conexões com o que é
-            ainda estranho. A escuta se radicaliza na tentativa de absorver os
-            sons reconhecíveis no lugar-corpo que trazemos dentro. Na
-            ressonância interior dessas vozes, germina-se a possibilidade da
-            fala. Alocadas em ninho-garganta11, as palavras crescem, tomam forma
-            e ganham alma na sonoridade vibratória que se projeta da boca pelo
-            ar. Ser estrangeiro em lugar algo-rítmico é estranhar o habitat,
-            lançar um olhar desconfiado pelo que é desconhecido, não-familiar.
-            Ser ex-ótico, olhar pela via do estranhamento, do incômodo que
-            reverbera no corpo-pele e germina, cria seres, palavras, larvas que
-            agora deslizam nesse campo numérico inóspito.<br></br> 5. Vertere,
-            origem do verso, do avesso, do adverso. Em tradução do latim seria
-            algo como virar ou dobrar. Remete a língua praticada entre os
-            agricultores em uma comparação com o ato de arar a terra em faixas
-            que ao fim do terreno, viravam e recomeçavam em uma nova linha.
-            Diz-se que na época clássica, os gregos escreviam até o fim da linha
-            e então passavam para baixo, chamando-a de um vertere, verso.
-            Podemos pensar que o avesso do avesso do avesso do avesso seja um
-            poema, um campo arado, uma fita de Moebius, “uma superfície
-            topológica na qual o extremo de um dos lados continua no avesso do
-            outro, o que os torna indiscerníveis”. (Rolnik, 2018)<br></br> 6.
-            “Períodos de convulsão são sempre os mais difíceis de viver, mas é
-            neles também que a vida grita mais alto e desperta aqueles que ainda
-            não sucumbiram à condição de zumbis – uma condição a que estamos
-            todos destinados pela cafetinagem da pulsão vital” (Rolnik, 2018)
-            <br></br> 7. Caminhando, obra de Lygia Clark, 1963:
-            https://www.moma.org/audio/playlist/181/2392 <br></br> 8. “Na parte
-            inferior do degrau, à direita, vi uma pequena esfera furta-cor, de
-            quase intolerável fulgor. A princípio, julguei-a giratória; depois,
-            compreendi que esse movimento era uma ilusão produzida pelos
-            vertiginosos espetáculos que encerrava. O diâmetro do Aleph seria de
-            dois ou três centímetros, mas o espaço cósmico estava aí, sem
-            diminuição de tamanho. Cada coisa (o cristal do espelho, digamos)
-            era infinitas coisas, porque eu a via claramente de todos os pontos
-            do universo. Vi o populoso mar, vi a aurora e a tarde, vi as
-            multidões da América, vi uma prateada teia de aranha no centro de
-            uma negra pirâmide, vi um labirinto roto (era Londres), vi
-            intermináveis olhos próximos perscrutando-me como num espelho, vi
-            todos os espelhos do planeta e nenhum me refletiu, vi num pátio da
-            rua Soler as mesmas lajotas que, há trinta anos, vi no vestíbulo de
-            uma casa em Fray Bentos, vi cachos de uva, neve, tabaco, veios de
-            metal, vapor de água, vi convexos desertos equatoriais e cada um de
-            seus grãos de areia, vi em Inverness uma mulher que não esquecerei,
-            vi a violenta cabeleira, o altivo corpo, vi um câncer no peito, vi
-            um círculo de terra seca numa calçada onde antes existira uma
-            árvore, vi uma chácara de Adrogué, um exemplar da primeira versão
-            inglesa de Plínio, a de Philemon Holland, vi, ao mesmo tempo, cada
-            letra de cada página (em pequeno, eu costumava maravilhar-me com o
-            fato de que as letras de um livro fechado não se misturassem e se
-            perdessem no decorrer da noite), vi a noite e o dia contemporâneo,
-            vi um poente em Querétaro que parecia refletir a cor de uma rosa em
-            Bengala, vi meu dormitório sem ninguém, vi num gabinete de Alkmaar
-            um globo terrestre entre dois espelhos que o multiplicam
-            indefinidamente, vi cavalos de crinas redemoinhadas numa praia do
-            mar Cáspio, na aurora, vi a delicada ossatura de uma mão, vi os
-            sobreviventes de uma batalha enviando cartões-postais, vi numa
-            vitrina de Mirzapur um baralho espanhol, vi as sombras oblíquas de
-            algumas samambaias no chão de uma estufa, vi tigres, êmbolos,
-            bisões, marulhos e exércitos, vi todas as formigas que existem na
-            terra, vi um astrolábio persa, vi numa gaveta da escrivaninha (e a
-            letra me fez tremer) cartas obscenas, inacreditáveis, precisas, que
-            Beatriz dirigira a Carlos Argentino, vi um adorado monumento em La
-            Chacarita, vi a relíquia atroz do que deliciosamente fora Beatriz
-            Viterbo, vi a circulação de meu escuro sangue, vi a engrenagem do
-            amor e a modificação da morte, vi o Aleph, de todos os pontos, vi no
-            Aleph a terra, e na terra outra vez o Aleph, e no Aleph a terra, vi
-            meu rosto e minhas vísceras, vi teu rosto e senti vertigem e chorei,
-            porque meus olhos haviam visto esse objeto secreto e conjetura) cujo
-            nome usurpam os homens, mas que nenhum homem olhou: o inconcebível
-            universo.” (Borges, 1949)<br></br> 9. Agora, video-poema de Arnaldo
-            Antunes, 1993: https://www.youtube.com/watch?v=9FROBNBoTgQ <br></br>{" "}
-            10. Gabriela Carvalho (Brasil, 1988) costuma ser curadora, escritora
-            (seria artista?), produtora, professora, cozinheira, dançarina e,
-            atualmente, desenvolve um projeto de investigação no doutoramento em
-            Artes Plásticas da FBAUP no campo da linguagem curatorial. Parte da
-            noção de escritura como aquela que inscreve algo no tempo, que marca
-            a ruína da história, para pensar a dimensão catalógica (do grego
-            kata+logos) da prática curatorial. Sobre este logos, lança-se então
-            um movimento endógeno de desconstrução com o intuito de desarticular
-            o eixo falogocêntrico das exposições em uma perspectiva
-            descolonializadora das artes e, consequentemente, das práticas
-            curatoriais. O que por si só consiste em um necessário ato de
-            fracasso. Como podem ver, continuo tentando.<br></br> 11. Receita
-            para aquecer um ninho-garganta Você vai precisar de: - um pedaço
-            pequeno de gengibre; - um pedaço pequeno de cúrcuma; - um dente de
-            alho; - um limão (de casca verde); - um pau de canela; - uma colher
-            de mel; - meio litro de água. Pique em pedaços menores o gengibre, a
-            cúrcuma e o alho. Em uma panela aqueça esses ingredientes junto com
-            a água e o pau de canela. Após levantar fervura deixe ainda por
-            cinco minutos. Ao final, espremer o limão e misturar a canela. Beber
-            ainda quente. Mantenha o corpo aquecido. É tiro e queda para o
-            ninho-garganta, tem gente que brota até canto. A vó dizia que também
-            é bom pra reforçar a imunidade. (A vó, 1996)
+            1. Le saut dans le vide, photo-performance by Yves Klein, 1960:{" "}
+            <a href="http://www.yvesklein.com/en/oeuvres/view/6/immateriel/643/le-saut-dans-le-vide/? of = 0">
+              http://www.yvesklein.com/<wbr></wbr>en/oeuvres/view/6/<wrb></wrb>
+              immateriel
+              <wbr></wbr>/643/le-saut-dans-le-vide/? of = 0{" "}
+            </a>
+            2. “DA ADVERSIDADE VIVEMOS!” [From adversity we live!]. Hélio
+            Oiticica, 1967.<br></br>
+            3. Poesia é risco (poetry is risk), performance by Augusto de
+            Campos, Cid Campos and Walter Silveira, 1996:{" "}
+            <a href="http://site.videobrasil.org.br/en/canalvb/video/1713108/">
+              http://site.videobrasil<wbr></wbr>
+              .org.br/en/canalvb/video<wbr></wbr>/1713108/
+            </a>
+            <br></br>
+            Poesia_e_risco_Augusto<wbr></wbr>_de_Campo_Cid_Campos<wbr></wbr>
+            _e_Walter_Silveira_11o_Festival
+            <br></br>
+            4. Place is space permeated by memory, by crossings, the voices of
+            those who opened the trails, “a portion of land / city / landscape
+            seen from within”. To enter foreign territory requires temporality,
+            the senses active and creating connections with what is still
+            strange. Listening is radicalized in an attempt to absorb the
+            recognizable sounds in the body-place that lives inside us. In the
+            inner resonance of these voices, the possibility of speech
+            germinates. Allocated in a nest-throat11, the words grow, take shape
+            and take on a soul with the vibrating sound that protrudes from the
+            mouth through the air. Being a foreigner in a algo-rithm place means
+            wondering about the habitat, casting a suspicious look at what is
+            unknown, unfamiliar. Being an ex-otic, looking through a strangeness
+            lense, through the discomfort that reverberates in the body-skin and
+            germinates, creating beings, words, larvae that now slide in this
+            inhospitable numerical field. 5. Vertere, the same origin of the
+            verse, the reverse, the adverse. The Latin translation would be
+            something like turning or bending. It refers to the language
+            practiced among farmers in a comparison with the act of plowing the
+            land in stretches that, at the end of the land, turned and started
+            over on a new line. It is said that in classical times, the Greeks
+            wrote to the end of the line and then passed downwards, calling it a
+            vertere, a verse. We can think that the Reversal of the inside-out
+            reversal is a poem, a plowed field, a Möbius strip, "a topological
+            surface where the end of one side restarts on the reverse of the
+            other, which makes them indiscernible". (Rolnik, 2018)<br></br>
+            6. “Convulsing times are always the most difficult to live in , but
+            it is also in them that life screams the loudest and awakens those
+            who have not yet succumbed to the condition of zombies - a condition
+            that we are all destined for because of the pimp of the vital
+            drive”. (Rolnik, 2018)<br></br>
+            7. Caminhando (walking), by Lygia Clark, 1963:
+            <a href="https://www.moma.org/audio/playlist/181/2392">
+              https://www.moma.org/<wbr></wbr>audio/playlist/181/2392
+            </a>
+            <br></br>
+            8. “On the back part of the step, toward the right, I saw a small
+            iridescent sphere of almost unbearable brilliance. At first I
+            thought it was revolving; then I realized that this movement was an
+            illusion created by the dizzying world it bounded. The Aleph’s
+            diameter was probably little more than an inch, but all space was
+            there, actual and undiminished. Each thing (a mirror’s face, let us
+            say) was infinite things, since I distinctly saw it from every angle
+            of the universe. I saw the teeming sea; I saw daybreak and
+            nightfall; I saw the multitudes of America; I saw a silvery cobweb
+            in the center of a black pyramid; I saw a splintered labyrinth (it
+            was London); I saw, close up, unending eyes watching themselves in
+            me as in a mirror; I saw all the mirrors on earth and none of them
+            reflected me; I saw in a backyard of Soler Street the same tiles
+            that thirty years before I’d seen in the entrance of a house in Fray
+            Bentos; I saw bunches of grapes, snow, tobacco, lodes of metal,
+            steam; I saw convex equatorial deserts and each one of their grains
+            of sand; I saw a woman in Inverness whom I shall never forget; I saw
+            her tangled hair, her tall figure, I saw the cancer in her breast; I
+            saw a ring of baked mud in a sidewalk, where before there had been a
+            tree; I saw a summer house in Adrogué and a copy of the first
+            English translation of Pliny — Philemon Holland’s — and all at the
+            same time saw each letter on each page (as a boy, I used to marvel
+            that the letters in a closed book did not get scrambled and lost
+            overnight); I saw a sunset in Querétaro that seemed to reflect the
+            colour of a rose in Bengal; I saw my empty bedroom; I saw in a
+            closet in Alkmaar a terrestrial globe between two mirrors that
+            multiplied it endlessly; I saw horses with flowing manes on a shore
+            of the Caspian Sea at dawn; I saw the delicate bone structure of a
+            hand; I saw the survivors of a battle sending out picture postcards;
+            I saw in a showcase in Mirzapur a pack of Spanish playing cards; I
+            saw the slanting shadows of ferns on a greenhouse floor; I saw
+            tigers, pistons, bison, tides, and armies; I saw all the ants on the
+            planet; I saw a Persian astrolabe; I saw in the drawer of a writing
+            table (and the handwriting made me tremble) unbelievable, obscene,
+            detailed letters, which Beatriz had written to Carlos Argentino; I
+            saw a monument I worshipped in the Chacarita cemetery; I saw the
+            rotted dust and bones that had once deliciously been Beatriz
+            Viterbo; I saw the circulation of my own dark blood; I saw the
+            coupling of love and the modification of death; I saw the Aleph from
+            every point and angle, and in the Aleph I saw the earth and in the
+            earth the Aleph and in the Aleph the earth; I saw my own face and my
+            own bowels; I saw your face; and I felt dizzy and wept, for my eyes
+            had seen that secret and conjectured object whose name is common to
+            all men but which no man has looked upon — the unimaginable
+            universe. (in Aleph – Borges, 1949)
           </PNoBorder>
         </TextNoBorder>
       </TextWrapper>

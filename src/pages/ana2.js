@@ -66,7 +66,9 @@ const Ana2Page = ({ data }) => (
 
       <TextWrapper>
         <TitleOfWork>{data.allDataJson.edges[4].node.title}</TitleOfWork>
-        <Website>{data.allDataJson.edges[4].node.website}</Website>
+        <Website as="a" href="http://anaalmeidapinto.com">
+          {data.allDataJson.edges[4].node.website}
+        </Website>
         <TextWithBorder>
           <p>
             Como materializar objetos e propostas artísticas na era dos suportes

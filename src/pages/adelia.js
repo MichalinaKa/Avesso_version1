@@ -1,6 +1,5 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import { graphql } from "gatsby"
 import TopNavArtistPage from "../components/TopNavArtistPage/TopNavArtistPage"
@@ -19,7 +18,6 @@ import { Website } from "../components/pageElements/website"
 const AdeliaPage = ({ data }) => (
   <Layout>
     <MainWrapper>
-      {" "}
       <TopNavArtistPage /> <H1>{data.allDataJson.edges[0].node.name}</H1>
       <GalleryWrapper>
         <ImageWrapper>
@@ -116,17 +114,6 @@ export const query = graphql`
           gif1Description
           gif2Description
           gif3Description
-        }
-      }
-    }
-    allFile(filter: { relativePath: { regex: "/adeliaimg/" } }) {
-      nodes {
-        childImageSharp {
-          fluid(quality: 90) {
-            src
-            srcSet
-            sizes
-          }
         }
       }
     }

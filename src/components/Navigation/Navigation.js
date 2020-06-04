@@ -9,7 +9,7 @@ const NavigationWrapper = styled.nav`
   margin: 100px;
   justify-content: flex-end;
   width: 90%;
-  font-family: "Montserrat";
+  font-family: "Bebas Neue";
   ${media.tablet} {
     width: 100%;
     margin: 0 auto;

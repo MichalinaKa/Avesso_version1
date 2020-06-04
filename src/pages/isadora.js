@@ -1,13 +1,12 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
 import Layout from "../components/Layout/Layout"
-import { graphql } from "gatsby"
-import styled from "styled-components"
+
 import { H1 } from "../components/pageElements/H1"
 import { MainWrapper } from "../components/pageElements/mainWrapper"
 import { GalleryWrapper } from "../components/pageElements/galleryWrapper"
 import { ImageWrapper } from "../components/pageElements/imageWrapper"
-import { StyledImage } from "../components/pageElements/styledImage"
+
 import { ImageTitle } from "../components/pageElements/imageTitle"
 import { TextWrapper } from "../components/pageElements/textWrapper"
 import { TextWithBorder } from "../components/pageElements/textWithBorder"
@@ -37,7 +36,9 @@ const IsadoraPage = ({ data }) => (
       <TextWrapper>
         {" "}
         <TitleOfWork>{data.allDataJson.edges[12].node.title}</TitleOfWork>
-        <Website>{data.allDataJson.edges[12].node.website}</Website>
+        <Website as="a" href="https://isadorapetrauskas.carbonmade.com/">
+          {data.allDataJson.edges[12].node.website}
+        </Website>
         <TextWithBorder>
           <p>
             Bernardo Soares dizia que a natureza deu ao homem o dom de não poder

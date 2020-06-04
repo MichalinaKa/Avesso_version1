@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { StyledImage } from "./styledImage"
 import { media } from "../../styles/media"
 
 const StyledVideo = styled.div`

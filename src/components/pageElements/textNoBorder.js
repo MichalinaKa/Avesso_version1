@@ -6,8 +6,11 @@ export const TextNoBorder = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
+
   padding: 50px;
   p {
+    font-size: 17px;
+
     text-align: ${({ alignLeft }) => (alignLeft ? "left" : "right")};
   }
   ${media.phone} {

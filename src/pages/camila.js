@@ -37,7 +37,9 @@ const CamilaPage = ({ data }) => (
 
       <TextWrapper>
         <TitleOfWork>{data.allDataJson.edges[5].node.title}</TitleOfWork>
-        <Website>{data.allDataJson.edges[5].node.website}</Website>
+        <Website as="a" href="http://camilatisott.com">
+          {data.allDataJson.edges[5].node.website}
+        </Website>
         <TextWithBorder>
           <p>
             O teto surgiu como se estivesse pronto para nascer. O vídeo

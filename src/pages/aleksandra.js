@@ -62,7 +62,9 @@ const AleksandraPage = ({ data }) => (
       </GalleryWrapper>
       <TextWrapper>
         <TitleOfWork>{data.allDataJson.edges[2].node.title}</TitleOfWork>
-        <Website>{data.allDataJson.edges[2].node.website}</Website>
+        <Website as="a" href="http://aleksandrakalisz.com">
+          {data.allDataJson.edges[2].node.website}
+        </Website>
         <TextWithBorder>
           <p>
             Now with the abrupt change in our lifestyles, a change within the

@@ -2,7 +2,7 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
 import { graphql } from "gatsby"
-import styled from "styled-components"
+
 import { H1 } from "../components/pageElements/H1"
 import { MainWrapper } from "../components/pageElements/mainWrapper"
 import { GalleryWrapper } from "../components/pageElements/galleryWrapper"
@@ -44,28 +44,29 @@ const PedroPage = ({ data }) => (
 
       <TextWrapper>
         <TitleOfWork>{data.allDataJson.edges[21].node.title}</TitleOfWork>
-        <Website>{data.allDataJson.edges[21].node.website}</Website>
+        <Website as="a" href="http://www.tubafrom.com/">
+          {data.allDataJson.edges[21].node.website}
+        </Website>
         <TextWithBorder>
-          {/* <p>cora = cora / (1 + 0.05 * Math.Abs(k - size / 2))<br></br>
-cor1 = System.Drawing.Color.FromArgb(cora, corr, corg, corb)<br></br>
-myPen = New Pen(cor1, gross)<br></br>
-a = size<br></br>
-b = a * (1.5 - Rnd())<br></br>
-l = 10000<br></br>
-f = Rnd() * 10<br></br>
-myBrush = New SolidBrush(corfill)<br></br>
-myGraphics.FillEllipse(myBrush, aa - a, bb - b, 2 * a, 2 * b)<br></br>
-For i = 1 To 2<br></br>
-    f = Rnd() * 360<br></br>
-    g = f + Rnd() * 100<br></br>
- While (f < g) <br></br>
-       th1 = 6.28 / 360 * f<br></br>
-       c = aa + a * Math.Cos(th1)<br></br>
-       d = bb + b * Math.Sin(th1)<br></br>
-       myPen = New Pen(cor, gross)<br></br>
-       myGraphics.DrawLine(myPen, a1, b1, a2, b2)<br></br>
-    End While<br></br>
-Next i</p> */}
+          <p>
+            cora = cora / (1 + 0.05 * Math.Abs(k - size / 2))<br></br>
+            cor1 = System.Drawing.Color.FromArgb(cora, corr, corg, corb)
+            <br></br>
+            myPen = New Pen(cor1, gross)<br></br>a = size<br></br>b = a * (1.5 -
+            Rnd())<br></br>l = 10000<br></br>f = Rnd() * 10<br></br>
+            myBrush = New SolidBrush(corfill)<br></br>
+            myGraphics.FillEllipse(myBrush, aa - a, bb - b, 2 * a, 2 * b)
+            <br></br>
+            For i = 1 To 2<br></br>f = Rnd() * 360<br></br>g = f + Rnd() * 100
+            <br></br>
+            While <br></br>
+            th1 = 6.28 / 360 * f<br></br>c = aa + a * Math.Cos(th1)<br></br>d =
+            bb + b * Math.Sin(th1)<br></br>
+            myPen = New Pen(cor, gross)<br></br>
+            myGraphics.DrawLine(myPen, a1, b1, a2, b2)<br></br>
+            End While<br></br>
+            Next i
+          </p>
         </TextWithBorder>
         <TextNoBorder></TextNoBorder>
       </TextWrapper>

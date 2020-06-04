@@ -2,12 +2,11 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
 import { graphql } from "gatsby"
-import styled from "styled-components"
 import { H1 } from "../components/pageElements/H1"
 import { MainWrapper } from "../components/pageElements/mainWrapper"
 import { GalleryWrapper } from "../components/pageElements/galleryWrapper"
 import { ImageWrapper } from "../components/pageElements/imageWrapper"
-import { StyledImage } from "../components/pageElements/styledImage"
+
 import { ImageTitle } from "../components/pageElements/imageTitle"
 import { TextWrapper } from "../components/pageElements/textWrapper"
 import { TextWithBorder } from "../components/pageElements/textWithBorder"
@@ -23,24 +22,6 @@ const Susana2Page = ({ data }) => (
     <MainWrapper>
       <TopNavArtistPage></TopNavArtistPage>
       <GalleryWrapper>
-        <ImageWrapper>
-          <StyledImage src="/artists/susana2img1.jpg" />
-          <ImageTitle>
-            {data.allDataJson.edges[25].node.img1Description}
-          </ImageTitle>
-        </ImageWrapper>
-        <ImageWrapper>
-          <StyledImage src="/artists/susana2img2.jpg" />
-          <ImageTitle>
-            {data.allDataJson.edges[25].node.img2Description}
-          </ImageTitle>
-        </ImageWrapper>
-        <ImageWrapper>
-          <StyledImage src="/artists/susana2img3.jpg" />
-          <ImageTitle>
-            {data.allDataJson.edges[25].node.img3Description}
-          </ImageTitle>
-        </ImageWrapper>
         <ImageWrapper isBig>
           <Video
             videoSrcURL="https://player.vimeo.com/video/348811505"
@@ -54,8 +35,38 @@ const Susana2Page = ({ data }) => (
 
       <TextWrapper>
         <TitleOfWork>{data.allDataJson.edges[25].node.title}</TitleOfWork>
-        <Website>{data.allDataJson.edges[25].node.website}</Website>
+        <Website as="a" href="https://susanasoarespinto.eu/">
+          {data.allDataJson.edges[25].node.website}
+        </Website>
         <TextWithBorder>
+          <p>
+            Qual é o desafio, no nosso tempo, perante as tendências
+            sócio-económicas e as do sistema Terra? Não será uma mudança no
+            sistema de tal forma transformadora, persistente e adaptável que nos
+            obriga a desenvolver uma nova lógica desafiante e, até aqui,
+            inexistente? <br></br>
+            <br></br>
+            pensa como um pássaro<br></br>
+            desenvolve uma consciência cósmica<br></br>
+            procura meteoros no chão<br></br>o tempo está a passar<br></br>
+            como inverter curvas?<br></br>
+            <br></br>
+            <br></br>
+            imagina uma auto-estrada sem limites para te guiar<br></br>
+            com humanos a fazer tortas<br></br>a construir cidades fantasma
+            <br></br>a escavar minas a céu aberto como fazem as crianças quando
+            brincam com a areia<br></br>a viver numa sociedade autofágica
+            <br></br>
+            os pensamentos são como nuvens, vão passando
+            <br></br>
+            faz assemblages com corpos diferenciados e tal como Spinoza, imagina
+            o fantástico número de partes extensivas<br></br>
+            apanha detritos plásticos na praia e faz taxonomia com eles<br></br>
+            <br></br>
+            apanha detritos plásticos na praia e faz taxonomia com eles
+          </p>
+        </TextWithBorder>
+        <TextNoBorder>
           <p>
             What is the challenge of our time, given the socio-economic trends
             and those of the Earth system? Is it not a change in the system that
@@ -84,8 +95,7 @@ const Susana2Page = ({ data }) => (
             <br></br>
             catch plastic objects from the sea side and do taxonomy with them
           </p>
-        </TextWithBorder>
-        <TextNoBorder></TextNoBorder>
+        </TextNoBorder>
       </TextWrapper>
     </MainWrapper>
   </Layout>

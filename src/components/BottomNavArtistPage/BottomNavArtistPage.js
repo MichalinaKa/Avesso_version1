@@ -8,7 +8,8 @@ const NavigationWrapper = styled.nav`
   flex-wrap: wrap;
   font-size: 15px;
   width: 60%;
-  font-family: "Montserrat";
+  font-family: "Lato";
+  font-weight: 300;
   ${media.phone} {
     width: 100%;
     margin: 0 auto;
