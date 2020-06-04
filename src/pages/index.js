@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import Navigation from "../components/Navigation/Navigation"
 import MainArtistContainer from "../components/MainArtistContainer/MainArtistContainer"
-import BottomNavArtistPage from "../components/BottomNavArtistPage/BottomNavArtistPage"
 import { media } from "../styles/media"
 import Layout from "../components/Layout/Layout"
 

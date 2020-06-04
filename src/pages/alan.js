@@ -14,19 +14,21 @@ import { TextWrapper } from "../components/pageElements/textWrapper"
 import { TextWithBorder } from "../components/pageElements/textWithBorder"
 import { TitleOfWork } from "../components/pageElements/titleOfWork"
 import { Website } from "../components/pageElements/website"
+import { Link } from "gatsby"
 
 const AlanPage = ({ data }) => (
   <Layout>
     <H1>{data.allDataJson.edges[1].node.name}</H1>
     <MainWrapper>
       <TopNavArtistPage />
+      {/* <button>
+        {" "}
+        <Link to="/marta">tutaj cos jest</Link>
+      </button> */}
+
       <GalleryWrapper>
         <ImageWrapper isBig>
-          <StyledImage
-            src={data.allFile.nodes[1].childImageSharp.fluid.src}
-            srcSet={data.allFile.nodes[1].childImageSharp.fluid.srcSet}
-            sizes={data.allFile.nodes[1].childImageSharp.fluid.sizes}
-          />
+          <StyledImage src="/artists/alanimg1.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[1].node.img1Description}
           </ImageTitle>

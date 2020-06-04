@@ -15,7 +15,10 @@ const TopNavArtistPage = () => (
   <NavMainWrapper>
     <ListWrapper>
       <goHome>
-        <Arrow src={arrowLeft} />
+        <Link to="/alan">
+          {" "}
+          <Arrow src={arrowLeft}></Arrow>
+        </Link>
       </goHome>
       <goHome>
         <Link to="/">home</Link>

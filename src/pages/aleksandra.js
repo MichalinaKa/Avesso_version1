@@ -1,7 +1,6 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
 import { graphql } from "gatsby"
-import { Link } from "gatsby"
 import TopNavArtistPage from "../components/TopNavArtistPage/TopNavArtistPage"
 import Layout from "../components/Layout/Layout"
 import { H1 } from "../components/pageElements/H1"
