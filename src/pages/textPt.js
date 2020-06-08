@@ -39,17 +39,22 @@ const PNoBorder = styled.p`
   }
 `
 const H1 = styled.h1`
-  font-family: "Bebas Neue";
-  font-size: 50px;
-
+  font-family: "Montserrat";
+  font-size: 40px;
   position: relative;
   :before {
     content: "";
     background-color: ${colors.yellow};
-    width: 120px;
+    width: 140px;
     height: 3px;
     position: absolute;
-    top: 26px;
+    top: 20px;
+    ${media.phone} {
+      width: 120px;
+    }
+  }
+  ${media.phone} {
+    font-size: 200%;
   }
 `
 
@@ -234,6 +239,11 @@ const TextPage = () => (
         </TextNoBorder>
       </TextWrapper>
     </MainWrapper>
+    <Link to="/textPt" className="scrollTopButton">
+      {" "}
+      <span> &larr;</span>
+      to the top
+    </Link>
   </Layout>
 )
 

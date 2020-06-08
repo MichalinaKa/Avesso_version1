@@ -9,8 +9,7 @@ export const TextNoBorder = styled.div`
 
   padding: 50px;
   p {
-    font-size: 17px;
-
+    font-size: 15px;
     text-align: ${({ alignLeft }) => (alignLeft ? "left" : "right")};
   }
   ${media.phone} {

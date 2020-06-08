@@ -2,8 +2,9 @@ import styled from "styled-components"
 import { colors } from "../../styles/colors"
 import { media } from "../../styles/media"
 export const H1 = styled.h1`
-  font-size: 50px;
-  font-family: "Bebas Neue";
+  font-size: 35px;
+  font-family: "Montserrat";
+  font-weight: 400;
   text-align: right;
   transform: rotate(270deg);
   position: absolute;
@@ -16,17 +17,20 @@ export const H1 = styled.h1`
     left: -180px;
   }
   ${media.phone} {
+    width: 100%;
     position: absolute;
     height: 50px;
-    top: 100px;
-    right: 0px;
-    padding-right: 2px;
-    font-size: 18px;
+    top: 50px;
+    left: 0;
+    right: 50%;
+    padding-right: 5px;
+    font-size: 20px;
+    margin: 50px auto 0;
     transform: none;
   }
   :before {
     content: "";
-    width: 500px;
+    width: 100%;
     height: 3px;
     background-color: ${colors.yellow};
     position: absolute;
@@ -35,7 +39,7 @@ export const H1 = styled.h1`
     ${media.phone} {
       top: 10px;
       right: 0px;
-      width: 150px;
+      width: 100%;
     }
   }
 `

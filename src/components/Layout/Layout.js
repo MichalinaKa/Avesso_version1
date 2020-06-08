@@ -4,6 +4,8 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import GlobalStyle from "../../styles/globalStyle"
 import { media } from "../../styles/media"
+import { Link } from "gatsby"
+
 const LayoutWrapper = styled.div`
   margin: 0 auto;
   text-align: center;

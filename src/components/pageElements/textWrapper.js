@@ -6,7 +6,6 @@ export const TextWrapper = styled.div`
   font-weight: 300;
   flex-direction: column;
   text-align: ${({ centered }) => (centered ? "center" : "right")};
-
   flex-wrap: wrap;
   padding: 50px;
   width: 100%;

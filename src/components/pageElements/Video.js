@@ -11,6 +11,7 @@ const StyledVideo = styled.div`
     height: 600px;
     ${media.smallDesktop} {
       width: 100%;
+      height: 100%;
     }
     ${media.phone} {
       width: 80%;

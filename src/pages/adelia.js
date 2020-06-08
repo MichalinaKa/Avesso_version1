@@ -1,7 +1,7 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
 import Layout from "../components/Layout/Layout"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import TopNavArtistPage from "../components/TopNavArtistPage/TopNavArtistPage"
 import { H1 } from "../components/pageElements/H1"
 import { MainWrapper } from "../components/pageElements/mainWrapper"
@@ -14,11 +14,25 @@ import { TextNoBorder } from "../components/pageElements/textNoBorder"
 import { ImageTitle } from "../components/pageElements/imageTitle"
 import { TitleOfWork } from "../components/pageElements/titleOfWork"
 import { Website } from "../components/pageElements/website"
+import { NavMainWrapper } from "../components/topNavElements/navMainWrapper"
 
 const AdeliaPage = ({ data }) => (
   <Layout>
+    <H1>{data.allDataJson.edges[0].node.name}</H1>
     <MainWrapper>
-      <TopNavArtistPage /> <H1>{data.allDataJson.edges[0].node.name}</H1>
+      {/* <TopNavArtistPage /> */}
+      <NavMainWrapper>
+        <Link to={data.allDataJson.edges[0].node.url}>
+          {" "}
+          <span> </span>
+        </Link>
+
+        <Link to="/"> home </Link>
+        <Link to={data.allDataJson.edges[1].node.url}>
+          {" "}
+          <span> &rarr;</span>
+        </Link>
+      </NavMainWrapper>
       <GalleryWrapper>
         <ImageWrapper>
           <StyledImage src="/artists/adeliaimg1.jpg" />
@@ -93,6 +107,12 @@ const AdeliaPage = ({ data }) => (
       </TextWrapper>{" "}
       {/* <Link to={data.allDataJson.edges[7].node.url}> next</Link> */}
     </MainWrapper>
+
+    <Link to={data.allDataJson.edges[0].node.url} className="scrollTopButton">
+      {" "}
+      <span> &larr;</span>
+      to the top
+    </Link>
   </Layout>
 )
 

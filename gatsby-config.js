@@ -42,13 +42,12 @@ module.exports = {
             family: `Montserrat`,
             variants: [`300`, `400`, `600`],
           },
-
-          {
-            family: `Bebas Neue`,
-          },
           {
             family: `Lato`,
-            variants: [`300`, `400`, `700`, `900`],
+            variants: [`300`, `400`, `600`],
+          },
+          {
+            family: `Bebas Neue`,
           },
         ],
       },

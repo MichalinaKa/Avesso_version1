@@ -1,9 +1,8 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
 import Layout from "../components/Layout/Layout"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import AlanVideo from "../assets/images/artists/alansound1.m4a"
-import TopNavArtistPage from "../components/TopNavArtistPage/TopNavArtistPage"
 import { H1 } from "../components/pageElements/H1"
 import { MainWrapper } from "../components/pageElements/mainWrapper"
 import { GalleryWrapper } from "../components/pageElements/galleryWrapper"
@@ -14,18 +13,24 @@ import { TextWrapper } from "../components/pageElements/textWrapper"
 import { TextWithBorder } from "../components/pageElements/textWithBorder"
 import { TitleOfWork } from "../components/pageElements/titleOfWork"
 import { Website } from "../components/pageElements/website"
-import { Link } from "gatsby"
+import { NavMainWrapper } from "../components/topNavElements/navMainWrapper"
 
 const AlanPage = ({ data }) => (
   <Layout>
     <H1>{data.allDataJson.edges[1].node.name}</H1>
     <MainWrapper>
-      <TopNavArtistPage />
-      {/* <button>
-        {" "}
-        <Link to="/marta">tutaj cos jest</Link>
-      </button> */}
+      <NavMainWrapper>
+        <Link to={data.allDataJson.edges[0].node.url}>
+          {" "}
+          <span> &larr;</span>
+        </Link>
 
+        <Link to="/"> home </Link>
+        <Link to={data.allDataJson.edges[2].node.url}>
+          {" "}
+          <span> &rarr;</span>
+        </Link>
+      </NavMainWrapper>
       <GalleryWrapper>
         <ImageWrapper isBig>
           <StyledImage src="/artists/alanimg1.jpg" />
@@ -79,7 +84,12 @@ const AlanPage = ({ data }) => (
           </p>
         </TextWithBorder>
       </TextWrapper>
-    </MainWrapper>
+    </MainWrapper>{" "}
+    <Link to={data.allDataJson.edges[1].node.url} className="scrollTopButton">
+      {" "}
+      <span> &larr;</span>
+      to the top
+    </Link>
   </Layout>
 )
 

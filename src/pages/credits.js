@@ -11,30 +11,34 @@ import { TextWrapper } from "../components/pageElements/textWrapper"
 import { colors } from "../styles/colors"
 import { media } from "../styles/media"
 const H1 = styled.h1`
-  font-family: "Bebas Neue";
-  font-size: 50px;
+  font-family: "Montserrat";
+  font-size: 40px;
   position: relative;
   :before {
     content: "";
     background-color: ${colors.yellow};
-    width: 480px;
+    width: 720px;
     height: 3px;
     position: absolute;
-    top: 26px;
+    top: 20px;
+    ${media.smallDesktop} {
+      width: 80%;
+    }
     ${media.tablet} {
-      width: 0;
+      width: 80%;
     }
     ${media.phone} {
-      width: 0;
+      width: 60%;
     }
+  }
+  ${media.phone} {
+    font-size: 200%;
   }
 `
 
 const Bold = styled.p`
-  font-family: "Bebas Neue";
-  /* margin: 0; */
-  letter-spacing: 2px;
-  font-weight: 900;
+  font-family: "Montserrat";
+  font-weight: 600;
 `
 const CreditsPage = () => (
   <Layout>
@@ -85,6 +89,11 @@ const CreditsPage = () => (
         </p>
       </TextWrapper>
     </MainWrapper>
+    <Link to="/credits" className="scrollTopButton">
+      {" "}
+      <span> &larr;</span>
+      to the top
+    </Link>
   </Layout>
 )
 

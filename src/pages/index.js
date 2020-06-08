@@ -4,6 +4,7 @@ import Navigation from "../components/Navigation/Navigation"
 import MainArtistContainer from "../components/MainArtistContainer/MainArtistContainer"
 import { media } from "../styles/media"
 import Layout from "../components/Layout/Layout"
+import { Link } from "gatsby"
 
 const HeroWrapper = styled.div`
   display: flex;
@@ -42,6 +43,11 @@ const IndexPage = () => (
     </HeroWrapper>
 
     <MainArtistContainer />
+    <Link to="/" className="scrollTopButton">
+      {" "}
+      <span> &larr;</span>
+      to the top
+    </Link>
   </Layout>
 )
 

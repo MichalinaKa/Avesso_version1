@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import { media } from "../../styles/media"
 export const GalleryWrapper = styled.div`
-  /* background-color: pink; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

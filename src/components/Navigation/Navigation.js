@@ -9,7 +9,7 @@ const NavigationWrapper = styled.nav`
   margin: 100px;
   justify-content: flex-end;
   width: 90%;
-  font-family: "Bebas Neue";
+  font-family: "Montserrat";
   ${media.tablet} {
     width: 100%;
     margin: 0 auto;
@@ -41,6 +41,9 @@ const NavigationList = styled.ul`
 const NavigationListItem = styled.li`
   padding: 10px 0;
   font-size: 20px;
+  ${media.phone} {
+    padding: 15px;
+  }
   :first-child:before {
     content: "";
     background-color: ${colors.yellow};
@@ -49,7 +52,7 @@ const NavigationListItem = styled.li`
     position: absolute;
     top: 121px;
     ${media.phone} {
-      top: 70px;
+      top: 75px;
     }
   }
   a {

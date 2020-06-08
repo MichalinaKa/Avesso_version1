@@ -1,7 +1,7 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
 import Layout from "../components/Layout/Layout"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import { H1 } from "../components/pageElements/H1"
 import { MainWrapper } from "../components/pageElements/mainWrapper"
@@ -14,13 +14,24 @@ import { TextWithBorder } from "../components/pageElements/textWithBorder"
 import { TextNoBorder } from "../components/pageElements/textNoBorder"
 import { TitleOfWork } from "../components/pageElements/titleOfWork"
 import { Website } from "../components/pageElements/website"
-import TopNavArtistPage from "../components/TopNavArtistPage/TopNavArtistPage"
+import { NavMainWrapper } from "../components/topNavElements/navMainWrapper"
 
 const SusanaPage = ({ data }) => (
   <Layout>
     <H1>{data.allDataJson.edges[24].node.name}</H1>
     <MainWrapper>
-      <TopNavArtistPage></TopNavArtistPage>
+      <NavMainWrapper>
+        <Link to={data.allDataJson.edges[23].node.url}>
+          {" "}
+          <span> &larr;</span>
+        </Link>
+
+        <Link to="/"> home </Link>
+        <Link to={data.allDataJson.edges[25].node.url}>
+          {" "}
+          <span> &rarr;</span>
+        </Link>
+      </NavMainWrapper>
       <GalleryWrapper>
         <ImageWrapper>
           <StyledImage src="/artists/susanaimg1.jpg"></StyledImage>
@@ -88,6 +99,11 @@ const SusanaPage = ({ data }) => (
         </TextNoBorder>
       </TextWrapper>
     </MainWrapper>
+    <Link to={data.allDataJson.edges[24].node.url} className="scrollTopButton">
+      {" "}
+      <span> &larr;</span>
+      to the top
+    </Link>
   </Layout>
 )
 export const query = graphql`
