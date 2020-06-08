@@ -10,7 +10,6 @@ import { TextNoBorder } from "../components/pageElements/textNoBorder"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { NavMainWrapper } from "../components/topNavElements/navMainWrapper"
-// import { goHme } from "../components/topNavElements/goHome"
 import { ListWrapper } from "../components/topNavElements/listWrapper"
 import { colors } from "../styles/colors"
 import { media } from "../styles/media"
@@ -122,7 +121,7 @@ const TextPage = () => (
             nothing too. It's a (fake) Aleph<sup>8</sup> hidden in the middle of
             Pandora's white screens. It is a place and a non-place. It is also
             all the places contained in the screen-time suspended in your hands
-            at this moment, dear sailor9.<br></br>
+            at this moment, dear sailor<sup>9</sup>.<br></br>
             <br></br> May 2020 <br></br>Gabriela Carvalho<sup>10</sup>
           </PBorder>
         </TextWithBorder>
@@ -160,9 +159,9 @@ const TextPage = () => (
             unknown, unfamiliar. Being an ex-otic, looking through a strangeness
             lense, through the discomfort that reverberates in the body-skin and
             germinates, creating beings, words, larvae that now slide in this
-            inhospitable numerical field. 5. Vertere, the same origin of the
-            verse, the reverse, the adverse. The Latin translation would be
-            something like turning or bending. It refers to the language
+            inhospitable numerical field. <br></br>5. Vertere, the same origin
+            of the verse, the reverse, the adverse. The Latin translation would
+            be something like turning or bending. It refers to the language
             practiced among farmers in a comparison with the act of plowing the
             land in stretches that, at the end of the land, turned and started
             over on a new line. It is said that in classical times, the Greeks
@@ -225,7 +224,36 @@ const TextPage = () => (
             own bowels; I saw your face; and I felt dizzy and wept, for my eyes
             had seen that secret and conjectured object whose name is common to
             all men but which no man has looked upon — the unimaginable
-            universe. (in Aleph – Borges, 1949)
+            universe. (in Aleph – Borges, 1949)<br></br>
+            9. Agora (Now), video-poem by Arnaldo Antunes, 1993:
+            <a href="https://www.youtube.com/watch?v=9FROBNBoTgQ">
+              https://www.youtube.com/watch?v=9FROBNBoTgQ
+            </a>
+            <br></br>10. Gabriela Carvalho (Brazil, 1988) is usually a curator,
+            writer (an artist?), producer, teacher, cook, dancer and, currently,
+            she is developing a research project at FBAUP's PhD in Visual Arts
+            program in the field of curatorial language. She begins from the
+            notion of writing as one that inscribes something in time, that
+            marks the ruins of history, to think about the catalytic dimension
+            (from the Greek kata + logos) of curatorial practice. Under this
+            logos, an endogenous deconstruction movement is launched in order to
+            dismantle the phallogocentric axis of the exhibitions in a
+            decolonializing perspective of the arts and, consequently, of
+            curatorial practices. That, in itself, consists of a necessary act
+            of failure. As you can see, I keep trying.
+            <br></br>11. Recipe for heating a sore throat<br></br>
+            You will need:<br></br>- a small piece of ginger;<br></br>- a small
+            piece of turmeric;<br></br>- a clove of garlic;<br></br>- a lemon
+            (with green peel);<br></br>- a cinnamon stick;<br></br>- a spoon of
+            honey;<br></br>- half a liter of water.<br></br>
+            Chop the ginger, turmeric and garlic into smaller pieces. In a
+            saucepan, heat these ingredients together with the water and
+            cinnamon stick. After boiling, leave for another five minutes. At
+            the end, squeeze the lemon and mix the cinnamon. Drink still warm.
+            Keep your body warm.<br></br>
+            It is infallible for a sore throat, there are people that even start
+            singing. Grandma said it is also good for strengthening immunity.
+            (Grandmother, 1996)
           </PNoBorder>
         </TextNoBorder>
       </TextWrapper>

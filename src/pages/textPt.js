@@ -212,19 +212,22 @@ const TextPage = () => (
             porque meus olhos haviam visto esse objeto secreto e conjetura) cujo
             nome usurpam os homens, mas que nenhum homem olhou: o inconcebível
             universo.” (Borges, 1949)<br></br> 9. Agora, video-poema de Arnaldo
-            Antunes, 1993: https://www.youtube.com/watch?v=9FROBNBoTgQ <br></br>{" "}
-            10. Gabriela Carvalho (Brasil, 1988) costuma ser curadora, escritora
-            (seria artista?), produtora, professora, cozinheira, dançarina e,
-            atualmente, desenvolve um projeto de investigação no doutoramento em
-            Artes Plásticas da FBAUP no campo da linguagem curatorial. Parte da
-            noção de escritura como aquela que inscreve algo no tempo, que marca
-            a ruína da história, para pensar a dimensão catalógica (do grego
-            kata+logos) da prática curatorial. Sobre este logos, lança-se então
-            um movimento endógeno de desconstrução com o intuito de desarticular
-            o eixo falogocêntrico das exposições em uma perspectiva
-            descolonializadora das artes e, consequentemente, das práticas
-            curatoriais. O que por si só consiste em um necessário ato de
-            fracasso. Como podem ver, continuo tentando.<br></br> 11. Receita
+            Antunes, 1993:
+            <a href="http://www.youtube.com/watch?v=9FROBNBoTgQ">
+              http://www.youtube.com/watch?v=9FROBNBoTgQ{" "}
+            </a>
+            <br></br> 10. Gabriela Carvalho (Brasil, 1988) costuma ser curadora,
+            escritora (seria artista?), produtora, professora, cozinheira,
+            dançarina e, atualmente, desenvolve um projeto de investigação no
+            doutoramento em Artes Plásticas da FBAUP no campo da linguagem
+            curatorial. Parte da noção de escritura como aquela que inscreve
+            algo no tempo, que marca a ruína da história, para pensar a dimensão
+            catalógica (do grego kata+logos) da prática curatorial. Sobre este
+            logos, lança-se então um movimento endógeno de desconstrução com o
+            intuito de desarticular o eixo falogocêntrico das exposições em uma
+            perspectiva descolonializadora das artes e, consequentemente, das
+            práticas curatoriais. O que por si só consiste em um necessário ato
+            de fracasso. Como podem ver, continuo tentando.<br></br> 11. Receita
             para aquecer um ninho-garganta Você vai precisar de: - um pedaço
             pequeno de gengibre; - um pedaço pequeno de cúrcuma; - um dente de
             alho; - um limão (de casca verde); - um pau de canela; - uma colher
