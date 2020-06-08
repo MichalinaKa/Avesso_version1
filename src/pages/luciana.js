@@ -33,14 +33,14 @@ const LucianaPage = ({ data }) => (
         </Link>
       </NavMainWrapper>
       <GalleryWrapper>
-        <ImageWrapper>
+        <ImageWrapper isBig>
           {" "}
           <StyledImage src="/artists/lucianaimg1.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[14].node.img1Description}
           </ImageTitle>
         </ImageWrapper>
-        <ImageWrapper>
+        <ImageWrapper isBig>
           <Video
             videoSrcURL="https://www.youtube.com/embed/hRsXCLnXXFw"
             videoTitle=""
@@ -49,14 +49,14 @@ const LucianaPage = ({ data }) => (
             {data.allDataJson.edges[14].node.video1Description}
           </ImageTitle>
         </ImageWrapper>
-        <ImageWrapper>
+        <ImageWrapper isBig>
           {" "}
           <StyledImage src="/artists/lucianaimg2.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[14].node.img2Description}
           </ImageTitle>
         </ImageWrapper>
-        <ImageWrapper>
+        <ImageWrapper isBig>
           {" "}
           <StyledImage src="/artists/lucianaimg3.jpg" />
           <ImageTitle>
@@ -70,7 +70,7 @@ const LucianaPage = ({ data }) => (
             videoTitle=""
           />
 
-          <ImageTitle>
+          <ImageTitle isBig>
             {data.allDataJson.edges[14].node.video2Description}
           </ImageTitle>
         </ImageWrapper>
@@ -81,7 +81,7 @@ const LucianaPage = ({ data }) => (
             {data.allDataJson.edges[14].node.img4Description}
           </ImageTitle>
         </ImageWrapper>
-        <ImageWrapper>
+        <ImageWrapper isBig>
           <Video
             videoSrcURL="https://www.youtube.com/embed/yX2dZSRVbUo"
             videoTitle=""
@@ -108,7 +108,7 @@ const LucianaPage = ({ data }) => (
             apresenta-se como o ‘primeiro tempo’ de um conjunto de quatro
             trabalhos que costura o Adorável, o Adormecer, o Ardor, o Arredor, o
             Aquecedor. A amadora. Um inventário da letra A, tranformando A
-            investigadorA em A inventariadorA.<br></br>
+            investigadorA em A inventariadorA. <br></br>
             <br></br>
             <strong>Inventário</strong>
             <br></br> substantivo masculino<br></br>

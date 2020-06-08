@@ -37,7 +37,7 @@ const AlanPage = ({ data }) => (
           <ImageTitle>
             {data.allDataJson.edges[1].node.img1Description}
           </ImageTitle>
-          <video controls width="100%" height="100">
+          <video controls width="100%" height="100%">
             <source src={AlanVideo} type="video/mp4" />
           </video>
           <ImageTitle>

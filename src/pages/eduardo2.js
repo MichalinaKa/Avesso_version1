@@ -14,7 +14,6 @@ import { TextNoBorder } from "../components/pageElements/textNoBorder"
 import { TitleOfWork } from "../components/pageElements/titleOfWork"
 import { Website } from "../components/pageElements/website"
 import Video from "../components/pageElements/Video"
-import TopNavArtistPage from "../components/TopNavArtistPage/TopNavArtistPage"
 import { NavMainWrapper } from "../components/topNavElements/navMainWrapper"
 
 const Eduardo2Page = ({ data }) => (

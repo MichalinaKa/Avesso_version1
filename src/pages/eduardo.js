@@ -14,7 +14,6 @@ import { TextWithBorder } from "../components/pageElements/textWithBorder"
 import { TextNoBorder } from "../components/pageElements/textNoBorder"
 import { TitleOfWork } from "../components/pageElements/titleOfWork"
 import { Website } from "../components/pageElements/website"
-
 import { NavMainWrapper } from "../components/topNavElements/navMainWrapper"
 
 const EduardoPage = ({ data }) => (
@@ -35,6 +34,14 @@ const EduardoPage = ({ data }) => (
       </NavMainWrapper>
       <GalleryWrapper>
         <ImageWrapper isBig>
+          <audio controls width="100" height="100">
+            <source src={EduardoVideo} type="audio/mp3"></source>
+          </audio>
+          <ImageTitle>
+            {data.allDataJson.edges[8].node.sound1Description}
+          </ImageTitle>
+        </ImageWrapper>
+        <ImageWrapper isBig>
           <StyledImage src="/artists/eduardoimg1.jpg"></StyledImage>
         </ImageWrapper>
         <ImageWrapper isBig>
@@ -51,15 +58,6 @@ const EduardoPage = ({ data }) => (
         </ImageWrapper>
         <ImageWrapper isBig>
           <StyledImage src="/artists/eduardoimg6.jpg"></StyledImage>
-        </ImageWrapper>
-        <ImageWrapper>
-          {" "}
-          <video controls width="100%" height="100">
-            <source src={EduardoVideo} type="video/mp4" />
-          </video>
-          <ImageTitle>
-            {data.allDataJson.edges[8].node.sound1Description}
-          </ImageTitle>
         </ImageWrapper>
       </GalleryWrapper>
 

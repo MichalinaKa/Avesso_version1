@@ -8,7 +8,7 @@ const StyledVideo = styled.div`
   height: 100%;
   iframe {
     width: 700px;
-    height: 600px;
+    height: 550px;
     ${media.smallDesktop} {
       width: 100%;
       height: 100%;

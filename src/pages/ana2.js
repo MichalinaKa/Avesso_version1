@@ -13,7 +13,6 @@ import { TextWithBorder } from "../components/pageElements/textWithBorder"
 import { TextNoBorder } from "../components/pageElements/textNoBorder"
 import { TitleOfWork } from "../components/pageElements/titleOfWork"
 import { Website } from "../components/pageElements/website"
-
 import { NavMainWrapper } from "../components/topNavElements/navMainWrapper"
 
 const Ana2Page = ({ data }) => (

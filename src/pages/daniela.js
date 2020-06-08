@@ -33,7 +33,7 @@ const DanielaPage = ({ data }) => (
         </Link>
       </NavMainWrapper>
       <GalleryWrapper>
-        <ImageWrapper isBig>
+        <ImageWrapper>
           <StyledImage src="/artists/danielaimg1.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[7].node.img1Description}
@@ -46,32 +46,37 @@ const DanielaPage = ({ data }) => (
         <Website>{data.allDataJson.edges[7].node.website}</Website>
         <TextWithBorder>
           <p>
-            O tempo é ainda de (…) alucinações e espera. <br></br>
-            <br></br>No interior de uma grelha, que parece legitimar o lugar das
-            coisas, o centro move-se lentamente. As circunferências, que se
-            registam sobre a superfície translúcida das folhas de papel, vão
-            deixando um demoroso rasto de inscrições repetitivas. Do centro para
-            as extremidades, os gestos particulares vão sendo absorvidos pelo
+            "O tempo é ainda de (…) alucinações e espera" (Carlos Drummond de
+            Andrade).
+            <br></br>
+            <br></br>
+            No interior de uma grelha, que parece legitimar o lugar das coisas,
+            o centro move-se lentamente. As circunferências, que se registam
+            sobre a superfície translúcida das folhas de papel, vão deixando um
+            demoroso rasto de inscrições repetitivas. Do centro para as
+            extremidades, os gestos particulares vão sendo absorvidos pelo
             contexto geral: as marcas deixam as suas especificidades individuais
             e a ilusão apodera-se do desenho. Ponto após ponto, traço após traço
             a imagem vai ganhando um movimento, que de todo parece ser o seu. A
             fragilidade revela-se e confirma-se.
             <br></br>
-            <br></br>O tempo construtivo, esse que convocava uma dinâmica
+            <br></br> O tempo construtivo, esse que convocava uma dinâmica
             corporal, desvanece-se. O movimento e a ação dissipam-se num
             instante suspenso. Que bom seria, que algum tipo de cinesia
             continuasse presente. Um pequeno indício bastaria. Seria suficiente
             para convocar hipóteses, suposições, hipotéticas conjeturas… Que bom
             seria, saber se está a aumentar ou a reduzir. Mas a força do porvir
             que permanece em ação, parece não ser menos de ruptura do que de
-            integração, nem menos de “dissensão (…) quanto de consenso”.
-            Dir-se-ia que é tanto sinal de mudança, quanto de estagnação. É um
-            estar entre. É um intervalo. É uma espera em pausa.
+            integração, nem menos de “dissensão (…) quanto de consenso” (Jacques
+            Derrida) . Dir-se-ia que é tanto sinal de mudança, quanto de
+            estagnação. É um estar entre. É um intervalo. É uma espera em pausa.
           </p>
         </TextWithBorder>
         <TextNoBorder>
           <p>
-            The time is yet of (…) hallucinations and waiting.<br></br>
+            "The time is yet of (…) hallucinations and waiting" (Carlos Drummond
+            de Andrade).
+            <br></br>
             <br></br>
             From the inside of a grid, that seems legitimate the place of forms,
             the center moves slowly. The circles, that were inscribed on the
@@ -92,9 +97,9 @@ const DanielaPage = ({ data }) => (
             good would it be, to know if it is increasing or reducing. But the
             strength of what’s coming up, that remains in action, seems not to
             be less of rupture than of integration, neither less of “dissension
-            (…) as consensus”. It would be said that it is as much a signal of
-            change as of stagnation. It is an in between. It is a break. It is a
-            waiting in pause.
+            (…) as consensus” (Jacques Derrida). It would be said that it is as
+            much a signal of change as of stagnation. It is an in between. It is
+            a break. It is a waiting in pause.
           </p>
         </TextNoBorder>
       </TextWrapper>
@@ -117,17 +122,6 @@ export const query = graphql`
           website
           url
           img1Description
-        }
-      }
-    }
-    allFile(filter: { relativePath: { regex: "/daniela/" } }) {
-      nodes {
-        childImageSharp {
-          fluid(quality: 90) {
-            src
-            srcSet
-            sizes
-          }
         }
       }
     }

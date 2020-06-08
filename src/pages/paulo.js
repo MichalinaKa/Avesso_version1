@@ -45,6 +45,12 @@ const PauloPage = ({ data }) => (
         <ImageWrapper>
           <StyledImage src="/artists/pauloimg4.jpg" />
         </ImageWrapper>
+        <ImageWrapper>
+          <StyledImage src="/artists/pauloimg5.jpg" />
+        </ImageWrapper>
+        <ImageWrapper>
+          <StyledImage src="/artists/pauloimg6.jpg" />
+        </ImageWrapper>
         <ImageTitle>
           {data.allDataJson.edges[20].node.img1Description}
         </ImageTitle>
@@ -107,17 +113,6 @@ export const query = graphql`
           website
           url
           img1Description
-        }
-      }
-    }
-    allFile(filter: { relativePath: { regex: "/paulo/" } }) {
-      nodes {
-        childImageSharp {
-          fluid(quality: 90) {
-            src
-            srcSet
-            sizes
-          }
         }
       }
     }
