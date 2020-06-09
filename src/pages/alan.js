@@ -2,7 +2,7 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
 import { graphql, Link } from "gatsby"
-import AlanVideo from "../assets/images/artists/alansound1.m4a"
+import AlanSound from "../../static/artists/alansound1.mp3"
 import { H1 } from "../components/pageElements/H1"
 import { MainWrapper } from "../components/pageElements/mainWrapper"
 import { GalleryWrapper } from "../components/pageElements/galleryWrapper"
@@ -37,9 +37,11 @@ const AlanPage = ({ data }) => (
           <ImageTitle>
             {data.allDataJson.edges[1].node.img1Description}
           </ImageTitle>
-          <video controls width="100%" height="100%">
-            <source src={AlanVideo} type="video/mp4" />
-          </video>
+        </ImageWrapper>{" "}
+        <ImageWrapper>
+          <audio controls width="100" height="100">
+            <source src={AlanSound} type="audio/mp3"></source>
+          </audio>
           <ImageTitle>
             {data.allDataJson.edges[1].node.sound1Description}
           </ImageTitle>
