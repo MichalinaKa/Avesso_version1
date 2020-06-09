@@ -34,7 +34,7 @@ const XiangPage = ({ data }) => (
       </NavMainWrapper>
       <GalleryWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/xiangimg1.jpg" />
+          <StyledImage bigScale src="/artists/xiangimg1.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[26].node.img1Description}
           </ImageTitle>
@@ -52,7 +52,7 @@ const XiangPage = ({ data }) => (
           </ImageTitle>
         </ImageWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/xiangimg4.jpg" />
+          <StyledImage bigScale src="/artists/xiangimg4.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[26].node.img4Description}
           </ImageTitle>

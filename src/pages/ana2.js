@@ -62,7 +62,7 @@ const Ana2Page = ({ data }) => (
         </ImageWrapper>
         <ImageWrapper>
           {" "}
-          <StyledImage src="/artists/ana2img5.jpg" />
+          <StyledImage bigScale src="/artists/ana2img5.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[4].node.img5Description}
           </ImageTitle>

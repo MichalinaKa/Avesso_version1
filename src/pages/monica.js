@@ -35,19 +35,19 @@ const MonicaPage = ({ data }) => (
       </NavMainWrapper>
       <GalleryWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/monicaimg1.jpg" />
+          <StyledImage bigScale src="/artists/monicaimg1.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[18].node.img1Description}
           </ImageTitle>
         </ImageWrapper>{" "}
         <ImageWrapper>
-          <StyledImage src="/artists/monicaimg2.jpg" />
+          <StyledImage bigScale src="/artists/monicaimg2.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[18].node.img2Description}
           </ImageTitle>
         </ImageWrapper>{" "}
         <ImageWrapper>
-          <StyledImage src="/artists/monicaimg3.jpg" />
+          <StyledImage bigScale src="/artists/monicaimg3.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[18].node.img3Description}
           </ImageTitle>

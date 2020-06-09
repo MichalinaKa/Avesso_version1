@@ -34,13 +34,13 @@ const NajlaPage = ({ data }) => (
       </NavMainWrapper>
       <GalleryWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/najlaimg1.jpg" />
+          <StyledImage bigScale src="/artists/najlaimg1.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[19].node.img1Description}
           </ImageTitle>
         </ImageWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/najlaimg2.jpg" />
+          <StyledImage bigScale src="/artists/najlaimg2.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[19].node.img2Description}
           </ImageTitle>

@@ -40,7 +40,7 @@ const AdeliaPage = ({ data }) => (
           </ImageTitle>
         </ImageWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/adeliaimg2.jpg" />
+          <StyledImage bigScale src="/artists/adeliaimg2.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[0].node.img2Description}
           </ImageTitle>
@@ -60,7 +60,7 @@ const AdeliaPage = ({ data }) => (
 
         <ImageWrapper>
           {" "}
-          <StyledImage src="/artists/adeliaimg5.jpg" />
+          <StyledImage bigScale src="/artists/adeliaimg5.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[0].node.img5Description}
           </ImageTitle>

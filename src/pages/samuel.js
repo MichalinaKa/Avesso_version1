@@ -35,7 +35,7 @@ const SamuelPage = ({ data }) => (
       </NavMainWrapper>
       <GalleryWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/samuelimg1.jpeg"></StyledImage>
+          <StyledImage bigScale src="/artists/samuelimg1.jpeg"></StyledImage>
           <ImageTitle></ImageTitle>
         </ImageWrapper>
         <ImageWrapper>
@@ -48,7 +48,7 @@ const SamuelPage = ({ data }) => (
           </ImageTitle>
         </ImageWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/samuelimg2.jpeg"></StyledImage>
+          <StyledImage bigScale src="/artists/samuelimg2.jpeg"></StyledImage>
           <ImageTitle></ImageTitle>
         </ImageWrapper>
         <ImageWrapper>
@@ -61,7 +61,7 @@ const SamuelPage = ({ data }) => (
           </ImageTitle>
         </ImageWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/samuelimg3.jpeg"></StyledImage>
+          <StyledImage bigScale src="/artists/samuelimg3.jpeg"></StyledImage>
           <ImageTitle></ImageTitle>
         </ImageWrapper>
         <ImageWrapper>
@@ -74,7 +74,7 @@ const SamuelPage = ({ data }) => (
           </ImageTitle>
         </ImageWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/samuelimg4.jpeg"></StyledImage>
+          <StyledImage bigScale src="/artists/samuelimg4.jpeg"></StyledImage>
           <ImageTitle></ImageTitle>
         </ImageWrapper>
         <ImageWrapper>

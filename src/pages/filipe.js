@@ -39,13 +39,13 @@ const FilipePage = ({ data }) => (
           </ImageTitle>
         </ImageWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/filipeimg2.jpg" />
+          <StyledImage bigScale src="/artists/filipeimg2.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[11].node.img2Description}
           </ImageTitle>
         </ImageWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/filipeimg3.jpg" />
+          <StyledImage bigScale src="/artists/filipeimg3.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[11].node.img3Description}
           </ImageTitle>

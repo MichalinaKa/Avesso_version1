@@ -31,23 +31,23 @@ const AnaPage = ({ data }) => (
         </Link>
       </NavMainWrapper>
       <GalleryWrapper>
-        <ImageWrapper>
+        <ImageWrapper isBig>
           {" "}
-          <StyledImage src="/artists/anaimg1.jpg" />
+          <StyledImage bigScale src="/artists/anaimg1.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[3].node.img1Description}
           </ImageTitle>
         </ImageWrapper>
-        <ImageWrapper>
+        <ImageWrapper isBig>
           {" "}
-          <StyledImage src="/artists/anaimg2.jpg" />
+          <StyledImage bigScale src="/artists/anaimg2.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[3].node.img2Description}
           </ImageTitle>
         </ImageWrapper>
-        <ImageWrapper>
+        <ImageWrapper isBig>
           {" "}
-          <StyledImage src="/artists/anaimg3.jpg" />
+          <StyledImage bigScale src="/artists/anaimg3.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[3].node.img3Description}
           </ImageTitle>

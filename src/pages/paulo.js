@@ -34,22 +34,22 @@ const PauloPage = ({ data }) => (
       </NavMainWrapper>
       <GalleryWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/pauloimg1.jpg" />
+          <StyledImage bigScale src="/artists/pauloimg1.jpg" />
         </ImageWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/pauloimg2.jpg" />
+          <StyledImage bigScale src="/artists/pauloimg2.jpg" />
         </ImageWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/pauloimg3.jpg" />
+          <StyledImage bigScale src="/artists/pauloimg3.jpg" />
         </ImageWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/pauloimg4.jpg" />
+          <StyledImage bigScale src="/artists/pauloimg4.jpg" />
         </ImageWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/pauloimg5.jpg" />
+          <StyledImage bigScale src="/artists/pauloimg5.jpg" />
         </ImageWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/pauloimg6.jpg" />
+          <StyledImage bigScale src="/artists/pauloimg6.jpg" />
         </ImageWrapper>
         <ImageTitle>
           {data.allDataJson.edges[20].node.img1Description}

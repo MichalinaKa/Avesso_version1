@@ -33,37 +33,37 @@ const MartaPage = ({ data }) => (
       </NavMainWrapper>
       <GalleryWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/martaimg1.jpg" />
+          <StyledImage bigScale src="/artists/martaimg1.jpg" />
           <ImageTitle data-toggle-fullscreen>
             {data.allDataJson.edges[17].node.img1Description}
           </ImageTitle>
         </ImageWrapper>{" "}
         <ImageWrapper>
-          <StyledImage src="/artists/martaimg2.jpg" />
+          <StyledImage bigScale src="/artists/martaimg2.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[17].node.img2Description}
           </ImageTitle>
         </ImageWrapper>{" "}
         <ImageWrapper>
-          <StyledImage src="/artists/martaimg3.jpg" />
+          <StyledImage bigScale src="/artists/martaimg3.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[17].node.img3Description}
           </ImageTitle>
         </ImageWrapper>{" "}
         <ImageWrapper>
-          <StyledImage src="/artists/martaimg4.jpg" />
+          <StyledImage bigScale src="/artists/martaimg4.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[17].node.img4Description}
           </ImageTitle>
         </ImageWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/martaimg5.jpg" />
+          <StyledImage bigScale src="/artists/martaimg5.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[17].node.img5Description}
           </ImageTitle>
         </ImageWrapper>
         <ImageWrapper>
-          <StyledImage src="/artists/martaimg6.jpg" />
+          <StyledImage bigScale src="/artists/martaimg6.jpg" />
           <ImageTitle>
             {data.allDataJson.edges[17].node.img6Description}
           </ImageTitle>

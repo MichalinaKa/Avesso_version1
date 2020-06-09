@@ -7,7 +7,12 @@ export const StyledImage = styled.img`
   padding: 0 0 10px 20px;
   object-fit: contain;
   margin: 0 auto;
+  transition: all 0.6s ease-in-out;
   ${media.phone} {
     padding: 0 0 10px 0;
+  }
+  &:hover {
+    transform: scale(1.4);
+    transform: ${({ bigScale }) => (bigScale ? "scale(1.7)" : "scale(1.4)")};
   }
 `
