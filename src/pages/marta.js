@@ -87,9 +87,11 @@ const MartaPage = ({ data }) => (
             <br></br>
             expression without words.<br></br>
             <br></br>
-            Source:
-            https://dictionary.cambridge.org/pt/dicionario/ingles/reflection +
-            https://www.vocabulary.com/dictionary/reflexion
+            Source: <br></br>https://dictionary.cambridge<wbr></wbr>
+            .org/pt/dicionario/
+            <wbr></wbr>ingles/reflection <br></br> https://www.vocabulary.com
+            <wbr></wbr>
+            /dictionary/reflexion
           </p>
         </TextWithBorder>
         <TextNoBorder></TextNoBorder>

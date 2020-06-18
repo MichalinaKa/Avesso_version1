@@ -68,7 +68,9 @@ const Susana2Page = ({ data }) => (
             <br></br>a escavar minas a céu aberto como fazem as crianças quando
             brincam com a areia<br></br>a viver numa sociedade autofágica
             <br></br>
+            <br></br>
             os pensamentos são como nuvens, vão passando
+            <br></br>
             <br></br>
             faz assemblages com corpos diferenciados e tal como Spinoza, imagina
             o fantástico número de partes extensivas<br></br>

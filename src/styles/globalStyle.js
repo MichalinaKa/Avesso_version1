@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
 html{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 *, *::before, *::after {
@@ -15,6 +16,7 @@ html{
     background-color: ${colors.yellow}
 }
 body{
+    scroll-behavior: smooth;
     margin: 0;
      padding: 0;
      font-family: "Montserrat"

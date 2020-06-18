@@ -34,11 +34,7 @@ const SamuelPage = ({ data }) => (
         </Link>
       </NavMainWrapper>
       <GalleryWrapper>
-        <ImageWrapper>
-          <StyledImage bigScale src="/artists/samuelimg1.jpeg"></StyledImage>
-          <ImageTitle></ImageTitle>
-        </ImageWrapper>
-        <ImageWrapper>
+        <ImageWrapper isBig>
           <Video
             videoSrcURL="https://player.vimeo.com/video/422954561"
             videoTitle=""
@@ -47,11 +43,8 @@ const SamuelPage = ({ data }) => (
             {data.allDataJson.edges[23].node.video1Description}
           </ImageTitle>
         </ImageWrapper>
-        <ImageWrapper>
-          <StyledImage bigScale src="/artists/samuelimg2.jpeg"></StyledImage>
-          <ImageTitle></ImageTitle>
-        </ImageWrapper>
-        <ImageWrapper>
+
+        <ImageWrapper isBig>
           <Video
             videoSrcURL="https://player.vimeo.com/video/422956049"
             videoTitle=""
@@ -60,11 +53,8 @@ const SamuelPage = ({ data }) => (
             {data.allDataJson.edges[23].node.video2Description}
           </ImageTitle>
         </ImageWrapper>
-        <ImageWrapper>
-          <StyledImage bigScale src="/artists/samuelimg3.jpeg"></StyledImage>
-          <ImageTitle></ImageTitle>
-        </ImageWrapper>
-        <ImageWrapper>
+
+        <ImageWrapper isBig>
           <Video
             videoSrcURL="https://player.vimeo.com/video/422956750"
             videoTitle=""
@@ -73,11 +63,8 @@ const SamuelPage = ({ data }) => (
             {data.allDataJson.edges[23].node.video3Description}
           </ImageTitle>
         </ImageWrapper>
-        <ImageWrapper>
-          <StyledImage bigScale src="/artists/samuelimg4.jpeg"></StyledImage>
-          <ImageTitle></ImageTitle>
-        </ImageWrapper>
-        <ImageWrapper>
+
+        <ImageWrapper isBig>
           <Video
             videoSrcURL="https://player.vimeo.com/video/422957079"
             videoTitle=""

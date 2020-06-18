@@ -72,7 +72,7 @@ const AnaPage = ({ data }) => (
             aquilo que de mais natural existe e propondo uma aventura perigosa
             sem sair do lugar; entretanto os glaciares derretem e as cidades
             continuam no frenesim habitual.<br></br>
-            <br></br> tundra ou «planície musgosa»
+            <br></br> <strong>tundra ou «planície musgosa»</strong>
             <br></br> 1. BOTÂNICA formação vegetal característica das planícies
             de climas frios em que o subsolo está permanentemente gelado, que se
             desenvolve após o degelo da superfície e que é constituída

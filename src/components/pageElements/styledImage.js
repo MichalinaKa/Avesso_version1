@@ -13,6 +13,6 @@ export const StyledImage = styled.img`
   }
   &:hover {
     transform: scale(1.4);
-    transform: ${({ bigScale }) => (bigScale ? "scale(1.7)" : "scale(1.4)")};
+    transform: ${({ bigScale }) => (bigScale ? "scale(1.7)" : "scale(1.3)")};
   }
 `

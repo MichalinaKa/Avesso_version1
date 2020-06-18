@@ -94,7 +94,9 @@ const LucianaPage = ({ data }) => (
 
       <TextWrapper>
         <TitleOfWork>{data.allDataJson.edges[14].node.title}</TitleOfWork>
-        <Website>{data.allDataJson.edges[14].node.website}</Website>
+        <Website as="a" href="https://www.instagram.com/adornoensaio/">
+          {data.allDataJson.edges[14].node.website}
+        </Website>
         <TextWithBorder>
           <p>
             <strong>ADORNO #Ensaio1 A inventariadora</strong> é o ponto de
