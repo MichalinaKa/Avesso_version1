@@ -102,7 +102,10 @@ const SamuelPage = ({ data }) => (
             desafios: 1) Como inventar um novo olhar resistente à flutuação
             vertiginosa do modo de ver contemporâneo?; 2) Elogiar a lentidão; 3)
             Valorizar o insignificante; deixar-nos seduzir pelo anti-monumento,
-            pela periferia, pelas margens da atenção.
+            pela periferia, pelas margens da atenção.<br></br>O projecto
+            videográfico que tenho vindo a desenvolver desde 2019 procura, nos
+            seus múltiplos vídeos constituintes, encontrar um modo de relação
+            com a realidade a partir destes pressupostos.
           </p>
         </TextWithBorder>
         <TextNoBorder></TextNoBorder>

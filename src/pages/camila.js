@@ -68,7 +68,7 @@ const CamilaPage = ({ data }) => (
         </TextWithBorder>
       </TextWrapper>
     </MainWrapper>
-    <Link to={data.allDataJson.edges[4].node.url} className="scrollTopButton">
+    <Link to={data.allDataJson.edges[5].node.url} className="scrollTopButton">
       {" "}
       <span> &larr;</span>
       to the top
