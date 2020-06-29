@@ -47,7 +47,6 @@ a {
     height: 50px;
     text-align: center;
     position: fixed;
-    /* background-color: pink; */
     visibility: inherit;
     overflow: hidden;
     z-index: 99999999;
@@ -63,13 +62,16 @@ a {
         right: -30px;
     }
     ${media.phone}{
-        width: 100%;
-        justify-content: flex-start;
+        width:100%;
+        margin: 0 auto;
+        justify-content: center;
         bottom: 0;
         /* color: ${colors.black}; */
         transform: rotate(0deg);
-        background-color: rgba(255,255,255, 0.8);
-        padding: 0 120px;
+        background-color: rgba(255,255,255, 0.9);
+        /* padding: 0 20px; */
+        left: -20px;
+
     }
 }
  span{
